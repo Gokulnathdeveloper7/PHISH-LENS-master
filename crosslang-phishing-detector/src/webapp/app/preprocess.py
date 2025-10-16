@@ -4,20 +4,13 @@ import pandas as pd
 import re
 import nltk
 from nltk.corpus import stopwords
-import stopwordsiso as stopwordsiso
 
 nltk.download('stopwords')
 stop_words_en = set(stopwords.words('english'))
 
 # Get stopwords for a given language code, fallback to English
 def get_stopwords(language):
-    try:
-        if language and language in stopwordsiso.languages():
-            return set(stopwordsiso.stopwords(language))
-        else:
-            return stop_words_en
-    except Exception:
-        return stop_words_en
+    return stop_words_en
 
 def clean_text(text, language=None):
     text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)

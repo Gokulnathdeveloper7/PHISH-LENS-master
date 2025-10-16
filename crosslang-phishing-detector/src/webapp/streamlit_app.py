@@ -1,8 +1,3 @@
-import config
-
-# This file is deprecated. Please use the CLI or Flask web interface instead.
-print("[DEPRECATED] The Streamlit interface is no longer supported. Please use the CLI or Flask web interface.")
-
 import streamlit as st
 from app.predict import predict_phishing, predict_phishing_proba
 from app.language_detection import detect_language

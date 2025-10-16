@@ -46,7 +46,7 @@ crosslang-phishing-detector/
 ## Installation
 1. Clone the repository:
    ```powershell
-   git clone https://github.com/yourusername/Phisheye.git
+   git clone https://github.com/Gokulnathdeveloper7/PHISH-LENS-master.git
    ```
 2. Navigate to the project directory:
    ```powershell
